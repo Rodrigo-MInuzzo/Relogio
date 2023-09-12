@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio Digital</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-
-    <p id="titulo">Relógio Digital</p>
-
-    <div class="relogio">
-        <div >
-            <p id="horas">00</p>
-            <p style="font-size: 30px;">horas</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p id="titulo">Relógio Digital</p>
+    
+                <div class="relogio">
+                    <div class="col-md-4 mb-3 p-2">
+                        <p id="horas">00</p>
+                        <p style="font-size: 30px; color: white;">horas</p>
+                    </div>
+                    <div class="col-md-4 mb-3 p-2">
+                        <p id="minutos">00</p>
+                        <p style="font-size: 30px; color: white;">minutos</p>
+                    </div>
+                    <div class="col-md-4 mb-3 p-2">
+                        <p id="segundos">00</p>
+                        <p style="font-size: 30px; color: white;">segundos</p>
+                    </div>
+                </div>
+    
+                <footer>Rodrigo Minuzzo</footer>
+            </div>
         </div>
-        <div >
-            <p id="minutos">00</p>
-            <p style="font-size: 30px;">minutos</p>
-        </div>
-        <div>
-            <p id="segundos">00</p>
-            <p style="font-size: 30px;">segundos</p>
-        </div>
-
     </div>
-
-    <footer>Rodrigo Minuzzo</footer>
+   
     
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
